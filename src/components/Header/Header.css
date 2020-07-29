@@ -1,0 +1,10 @@
+.JustLogo {
+    width: 7vh;
+    height: 7vh;
+    background-image: url('../Header/logo.svg');
+    background-size: cover;
+}
+
+.TextNameApp {
+    font-size: 4vh;
+}
