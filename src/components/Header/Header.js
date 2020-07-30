@@ -1,6 +1,8 @@
 import React from 'react';
 import '../Header/Header.css';
 
+import BtnAdd from '../BtnAdd/BtnAdd'
+
 export default function Headder() {
     
     return(
@@ -9,7 +11,7 @@ export default function Headder() {
                 <div className='JustLogo'></div>
                 <span className="navbar-brand font-weight-bold text-uppercase text-warning TextNameApp">Box announcements</span>
             </div>
-            <button type="button" className="btn btn-lg btn-warning font-weight-bold text-uppercase">Add</button>
+            <BtnAdd />
             <form className="form-inline mt-2 d-flex justify-content-center flex-column flex-lg-row col-12 col-lg-4">
                 <input className="form-control mr-1 col-12 col-lg-9" type="search" placeholder="Search to announcements" aria-label="Search" />
                 <button className="btn btn-outline-warning my-2 font-weight-bold text-uppercase" type="submit">Search</button>
