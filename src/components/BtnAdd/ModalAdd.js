@@ -25,7 +25,7 @@ export default function ModalAdd () {
                 <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div className="modal-body">
-                <span className='card-subtitle text-muted right-align'><i class="fa fa-calendar"></i> <span className='font-weight-bold'>{postDate()}</span></span>
+                <span className='card-subtitle text-muted right-align'><i className="fa fa-calendar"></i> <span className='font-weight-bold'>{postDate()}</span></span>
                 <textarea className="form-control mt-2" minLength={10} maxLength={295} rows="3" placeholder='Description announcement'></textarea>
                 <input className='col-12 mt-2 inputContact' minLength={7} maxLength={40} type='text' placeholder='Contact data'/>
             </div>
