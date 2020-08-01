@@ -4,7 +4,7 @@ export default function ModalAdd () {
 
     const styleInputTitle = {
         border: 'none',
-        fontSize: '4vh'
+        fontSize: '3vh'
     }
 
     const postDate = () => {
@@ -27,8 +27,8 @@ export default function ModalAdd () {
                 <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div className="modal-body">
-                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                <span className='card-subtitle mb-2 text-muted right-align'>Date post: <span className='font-weight-bold'>{postDate()}</span></span>
+                <span className='card-subtitle text-muted right-align'><i class="fa fa-calendar"></i> <span className='font-weight-bold'>{postDate()}</span></span>
+                <textarea className="form-control mt-2" id="exampleFormControlTextarea1" rows="3" placeholder='Description announcement'></textarea>
             </div>
             <div className="modal-footer d-flex justify-content-center">
                 <button type="button" className="btn btn-light" data-dismiss="modal">Close</button>
