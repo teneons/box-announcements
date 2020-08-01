@@ -14,7 +14,7 @@ export default class BtnAdd extends Component {
     render() {
         return (
             <div>
-                <button type="button" className="btn btn-lg btn-warning font-weight-bold text-uppercase" data-toggle="modal" data-target="#ModalAdd">Add</button>
+                <button type="button" className="btn btn-lg btn-warning font-weight-bold text-uppercase" data-toggle="modal" data-target="#ModalAdd"><i class="fa fa-plus"></i>Add</button>
                 <ModalAdd />
              </div>
         )
