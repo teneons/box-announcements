@@ -4,7 +4,7 @@ import CardAnnouncement from '../CardAnnouncement/CardAnnouncement';
 
 export default class MainBlock extends Component {
 
-    AnnouncementEx = {
+    AnnouncementObjData = {
         idCard: 1,
         titleCard: 'Customers a chance chance cha',
         dateCard: '14.05.2020',
@@ -15,23 +15,11 @@ export default class MainBlock extends Component {
     render() {
         return (
             <div className='d-flex aling-items-center flex-fill flex-column'>
-
-                <CardAnnouncement idCard={this.AnnouncementEx.idCard}
-                                titleCard={this.AnnouncementEx.titleCard}
-                                descriptionCard={this.AnnouncementEx.descriptionCard}
-                                dateCard={this.AnnouncementEx.dateCard}
-                                contactCard={this.AnnouncementEx.contactCard} />
-                                                <CardAnnouncement idCard={this.AnnouncementEx.idCard}
-                                titleCard={this.AnnouncementEx.titleCard}
-                                descriptionCard={this.AnnouncementEx.descriptionCard}
-                                dateCard={this.AnnouncementEx.dateCard}
-                                contactCard={this.AnnouncementEx.contactCard} />
-                                                <CardAnnouncement idCard={this.AnnouncementEx.idCard}
-                                titleCard={this.AnnouncementEx.titleCard}
-                                descriptionCard={this.AnnouncementEx.descriptionCard}
-                                dateCard={this.AnnouncementEx.dateCard}
-                                contactCard={this.AnnouncementEx.contactCard} />
-
+                <CardAnnouncement idCard={this.AnnouncementObjData.idCard}
+                                titleCard={this.AnnouncementObjData.titleCard}
+                                descriptionCard={this.AnnouncementObjData.descriptionCard}
+                                dateCard={this.AnnouncementObjData.dateCard}
+                                contactCard={this.AnnouncementObjData.contactCard} />
             </div>
         )
     }
