@@ -3,7 +3,16 @@ import React, { Component } from 'react';
 import CardAnnouncement from '../CardAnnouncement/CardAnnouncement';
 
 export default class MainBlock extends Component {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+             AnnouncementData: []
+        }
+    }
 
+    
+    
     AnnouncementObjData = {
         idCard: 1,
         titleCard: 'Customers a chance chance cha',
