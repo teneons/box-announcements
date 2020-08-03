@@ -24,7 +24,7 @@ export default class ModalAdd extends Component {
 
     getInputsValue = (e) => {
         this.setState({txtTitle: e.target.value})
-        this.setState({txtDate: e.target.value})
+        this.setState({txtDate: this.adDate()})
         this.setState({txtDescription: e.target.value})
         this.setState({txtContact: e.target.value})
     }
@@ -48,7 +48,7 @@ export default class ModalAdd extends Component {
             </div>
             <div className="modal-body">
                 <span className='card-subtitle text-muted right-align' onChange={this.getInputsValue}><i className="fa fa-calendar"></i> <span className='font-weight-bold'>{this.adDate()}</span></span>
-                <textarea className="form-control mt-2" minLength={10} maxLength={295} onChange={this.getInputsValue} rows="3" placeholder='Description announcement'></textarea>
+                <textarea className="form-control mt-2" minLength={10} maxLength={295} onChange={this.getInputsValue} rows="3" placeholder='Description announcement' />
                 <input className='col-12 mt-2 inputContact' minLength={7} maxLength={40} onChange={this.getInputsValue} type='text' placeholder='Contact data'/>
             </div>
             <div className="modal-footer d-flex justify-content-center">
